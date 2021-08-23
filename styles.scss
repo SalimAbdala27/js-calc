@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  .calcBorder{
+    border: 5px black solid;
+    height: 90vh;
+    width: 70vw;
+    display: grid;
+    grid-template-areas:
+    "output output output output"
+    "clr plusorminus per divide"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vh 15vh 15vh 15vh 15vh 14vh;
+    button{
+      font-size: 30px;
+      color: #EEEEEE;
+      background-color: #252A34;
+    }
+    button:hover{
+      opacity: 50%;
+    }
+    .calcBorder__output{
+      display: flex;
+      flex-direction: flex-end;
+      align-items: center;
+      font-size: 30px;
+      grid-area: output;
+      border: 3px blue solid;
+      width: 69.5vw;
+      height: 15vh;
+    }
+    .calcBorder__clr{
+      grid-area: clr;
+    }
+    .calcBorder__plusorminus{
+      grid-area: plusorminus;
+    }
+    .calcBorder__percentage{
+      grid-area: per;
+    }
+    .calcBorder__divide{
+      grid-area: divide;
+      background-color: #590D82;
+    }
+    .calcBorder__seven{
+      grid-area: seven;
+    }
+    .calcBorder__eight{
+      grid-area: eight;
+    }
+    .calcBorder__nine{
+      grid-area: nine;
+    }
+    .calcBorder__multiply{
+      grid-area: multiply;
+      background-color: #590D82;
+    }
+    .calcBorder__four{
+      grid-area: four;
+    }
+    .calcBorder__five{
+      grid-area: five;
+    }
+    .calcBorder__six{
+      grid-area: six;
+    }
+    .calcBorder__minus{
+      grid-area: minus;
+      background-color: #590D82;
+    }
+    .calcBorder__one{
+      grid-area: one;
+    }
+    .calcBorder__two{
+      grid-area: two;
+    }
+    .calcBorder__three{
+      grid-area: three;
+    }
+    .calcBorder__plus{
+      grid-area: plus;
+      background-color: #590D82;
+    }
+    .calcBorder__zero{
+      grid-area: zero;
+    }
+    .calcBorder__dot{
+      grid-area: dot;
+    }
+    .calcBorder__equal{
+      grid-area: equal;
+      background-color: #FFC93C;
+      color: #252A34;
+    }
+  }
+
+}
+
