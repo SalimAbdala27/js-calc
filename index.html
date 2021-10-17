@@ -9,29 +9,31 @@
 </head>
 <body>
   <header class="header">
-    Try the calculator below 
+    <h3>
+      Try the calculator below 
+    </h3>
   </header>
   <div class="calcBorder">
-      <div class="calcBorder__output"></div>
-      <button class="calcBorder__clr"> C </button>
+      <div class="calcBorder__output" data-cy="display"></div>
+      <button class="calcBorder__clr" data-cy="clear"> C </button>
       <button class="calcBorder__plusorminus"> +/- </button>
-      <button class="calcBorder__percentage"> % </button>
-      <button class="calcBorder__divide operator" id="divide"> ÷ </button>
-      <button class="calcBorder__seven numbers" value=7> 7</button>
-      <button class="calcBorder__eight numbers" value=8> 8 </button>
-      <button class="calcBorder__nine numbers" value=9> 9 </button>
-      <button class="calcBorder__multiply operator" id="multiply"> x </button>
-      <button class="calcBorder__four numbers" value=4> 4 </button>
-      <button class="calcBorder__five numbers" value=5> 5 </button>
-      <button class="calcBorder__six numbers" value=6> 6 </button>
-      <button class="calcBorder__minus operator" id="minus"> - </button>
-      <button class="calcBorder__one numbers" value=1> 1 </button>
-      <button class="calcBorder__two numbers" value=2> 2 </button>      
-      <button class="calcBorder__three numbers" value=3> 3 </button>
-      <button class="calcBorder__plus operator" value=+ id="plus"> + </button>
-      <button class="calcBorder__zero numbers" value=0 > 0 </button>
-      <button class="calcBorder__dot"> . </button>
-      <button class="calcBorder__equal"> = </button>
+      <button class="calcBorder__percentage" data-cy="percentage"> % </button>
+      <button class="calcBorder__divide operator" id="divide" data-cy="divide"> ÷ </button>
+      <button class="calcBorder__seven numbers" value="7" data-cy="seven"> 7</button>
+      <button class="calcBorder__eight numbers" value="8" data-cy="eight"> 8 </button>
+      <button class="calcBorder__nine numbers" value="9" data-cy="nine"> 9 </button>
+      <button class="calcBorder__multiply operator" id="multiply" data-cy="times"> x </button>
+      <button class="calcBorder__four numbers" value="4" data-cy="four"> 4 </button>
+      <button class="calcBorder__five numbers" value="5" data-cy="five"> 5 </button>
+      <button class="calcBorder__six numbers" value="6" data-cy="six"> 6 </button>
+      <button class="calcBorder__minus operator" id="minus" data-cy="minus"> - </button>
+      <button class="calcBorder__one numbers" value="1" data-cy="one"> 1 </button>
+      <button class="calcBorder__two numbers" value="2" data-cy="two"> 2 </button>      
+      <button class="calcBorder__three numbers" value="3" data-cy="three"> 3 </button>
+      <button class="calcBorder__plus operator" value=+ id="plus" data-cy="plus"> + </button>
+      <button class="calcBorder__zero numbers" value=0 data-cy="zero" > 0 </button>
+      <button class="calcBorder__dot numbers" value=. data-cy="deciaml"> . </button>
+      <button class="calcBorder__equal" data-cy="equals"> = </button>
   </div>
   <script src="./main.js"></script>
 </body>

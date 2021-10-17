@@ -8,6 +8,7 @@ const equalsBtn = document.querySelector(".calcBorder__equal");
 const minusBtn = document.querySelector(".calcBorder__minus");
 const multiplyBtn = document.querySelector(".calcBorder__multiply");
 const divideBtn = document.querySelector(".calcBorder__divide");
+const percentageBtn = document.querySelector(".calcBorder__percentage");
 
 
 // oneBtn.addEventListener("click", (event) => {
@@ -32,25 +33,31 @@ const divideBtn = document.querySelector(".calcBorder__divide");
     firstNumber = parseFloat(display.innerHTML);
     display.innerHTML = " ";
     operator = "+";
-  })
+  });
 
   minusBtn.addEventListener("click", (event) => {
     firstNumber = parseFloat(display.innerHTML);
     display.innerHTML = " ";
-    operator = "-"
+    operator = "-";
   })
 
   multiplyBtn.addEventListener("click", (event) => {
     firstNumber = parseFloat(display.innerHTML)
     display.innerHTML = " ";
-    operator = "*"
+    operator = "*";
   })
 
   divideBtn.addEventListener("click", (event) => {
     firstNumber = parseFloat(display.innerHTML);
     display.innerHTML = " ";
-    operator = "/"
+    operator = "/";
   })
+
+  percentageBtn.addEventListener("click", (event) => {
+    firstNumber = parseFloat(display.innerHTML)
+    display.innerHTML = firstNumber / 100;
+    operator = "%";
+  });
 
   equalsBtn.addEventListener("click", () => {
     secondNumber = parseFloat(display.innerHTML);
@@ -63,7 +70,7 @@ const divideBtn = document.querySelector(".calcBorder__divide");
     } else if (operator === "/"){
       display.innerHTML = firstNumber / secondNumber;
     }
-  })
+  });
 
   // if statement needed to see if its the first or next number with the operator button being pressed 
 
@@ -71,4 +78,4 @@ const divideBtn = document.querySelector(".calcBorder__divide");
   // if operator button is index value 0 then use divde by 
   clearBtn.addEventListener("click", () => {
     display.innerHTML = " ";
-  })
+  });

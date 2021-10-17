@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 body{
   display: flex;
   justify-content: center;
@@ -14,7 +33,7 @@ body{
   .calcBorder{
     border: 5px black solid;
     height: 90vh;
-    width: 70vw;
+    width: 30vw;
     display: grid;
     grid-template-areas:
     "output output output output"
@@ -23,7 +42,7 @@ body{
     "four five six minus"
     "one two three plus"
     "zero zero dot equal";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 7.5vw 7.5vw 7.5vw 7vw;
     grid-template-rows: 15vh 15vh 15vh 15vh 15vh 14vh;
     button{
       font-size: 30px;
@@ -34,13 +53,14 @@ body{
       opacity: 50%;
     }
     .calcBorder__output{
+      background: white;
       display: flex;
-      flex-direction: flex-end;
+      flex-direction: center;
+      border: 5px grey solid;
       align-items: center;
-      font-size: 30px;
+      font-size: 50px;
       grid-area: output;
-      border: 3px green solid;
-      width: 69.5vw;
+      width: 29.5vw;
       height: 15vh;
     }
     .calcBorder__clr{
